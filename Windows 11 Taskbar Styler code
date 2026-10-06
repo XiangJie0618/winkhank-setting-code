@@ -1,0 +1,67 @@
+theme: TranslucentTaskbar
+styleConstants:
+  - ''
+controlStyles:
+  - target: Taskbar.TaskbarFrame#TaskbarFrame
+    styles:
+      - MaxWidth=1125
+      - HorizontalAlignment=Center
+      - Width=Auto
+      - MinWidth=1125
+  - target: Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid
+    styles:
+      - Padding=6,0,6,0
+      - Margin=0,1,0,3
+      - CornerRadius=15
+      - BorderThickness=1.05
+      - BorderBrush:=<SolidColorBrush Color="#20000000"/>
+      - Background:=<WindhawkBlur BlurAmount="7.2" TintColor="#25323232"/>
+  - target: Rectangle#BackgroundFill
+    styles:
+      - Visibility=Collapsed
+  - target: Rectangle#BackgroundStroke
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#SystemTrayFrameGrid
+    styles:
+      - Background:=#00000000
+      - CornerRadius=10
+      - Margin=0,2,0,3
+      - BorderThickness=6.5
+  - target: SystemTray.ChevronIconView
+    styles:
+      - Padding=0
+  - target: SystemTray.NotifyIconView#NotifyItemIcon
+    styles:
+      - Padding=0
+  - target: SystemTray.OmniButton
+    styles:
+      - Padding=0
+  - target: SystemTray.CopilotIcon
+    styles:
+      - Padding=0
+  - target: TextBlock#TimeInnerTextBlock
+    styles:
+      - FontSize=14.5
+      - Margin=0
+      - Padding=0
+  - target: TextBlock#DateInnerTextBlock
+    styles:
+      - Visibility=Collapsed
+  - target: SystemTray.Stack#ShowDesktopStack
+    styles:
+      - Margin=0,-4,-12,-4
+  - target: SystemTray.SystemTrayFrame
+    styles:
+      - HorizontalAlignment=1
+      - Margin=800,0,0,0
+  - target: TextBlock#InnerTextBlock[Text=]
+    styles:
+      - Text=
+themeResourceVariables:
+  - ''
+clickThroughTaskbar: 0
+xamlDiagnosticsHandling: alert
+resourceVariables:
+  - variableKey: ''
+    value: ''
