@@ -1,0 +1,43 @@
+theme: ''
+styleConstants:
+  - ''
+controlStyles:
+  - target: Border > Frame > ContentPresenter > SystemSettings.View.RootPage > Grid#RootPageGrid
+    styles:
+      - Background:=<AcrylicBrush BackgroundSource="HostBackdrop" TintColor="#FF000000" FallbackColor="#66000000" TintOpacity="0.4" TintLuminosityOpacity="0.4"/>
+
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid
+    styles:
+      - Background:=#00000000
+  - target: Microsoft.UI.Xaml.Controls.NavigationView#PermanentNavigationView > Grid#RootGrid > Grid
+    styles:
+      - Background:=#00000000
+  - target: Grid#ContentRoot
+    styles:
+      - Background:=#00000000
+  - target: SplitView#RootSplitView > Grid > Grid#ContentRoot
+    styles:
+      - Background:=#00000000
+  - target: Frame#PermanentNavRootFrame
+    styles:
+      - Background:=#00000000
+  - target: Grid#RootGrid
+    styles:
+      - Background:=#00000000
+  - target: Grid#AppTitleBar
+    styles:
+      - Background:=#00000000
+
+themeResourceVariables:
+  - WindowCaptionBackground@Dark=#00000000
+  - WindowCaptionBackground@Light=#00000000
+  - WindowCaptionBackgroundDisabled@Dark=#00000000
+  - WindowCaptionBackgroundDisabled@Light=#00000000
+  - SolidBackgroundFillColorBase@Dark=#00000000
+  - SolidBackgroundFillColorBase@Light=#00000000
+  - SolidBackgroundFillColorSecondary@Dark=#00000000
+  - SolidBackgroundFillColorSecondary@Light=#00000000
+  - LayerFillColorDefault@Dark=#00000000
+  - LayerFillColorDefault@Light=#00000000
+  - ApplicationPageBackgroundThemeBrush@Dark=#00000000
+  - ApplicationPageBackgroundThemeBrush@Light=#00000000
